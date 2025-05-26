@@ -87,6 +87,7 @@
 
 #wrapper #header h1> a {
     font-size: 1em;
+    font-weight: 300;
 }
 
 #wrapper #header h1> p {
@@ -191,6 +192,7 @@ color: #083f77;
       text-align: end;
       font-size: 7em;
       color: #083f77;
+    font-weight: 300;
   
 }
 
@@ -263,6 +265,7 @@ color: #083f77;
 #box3 #h3 {
   font-size: 7em;
   color: #083f77;
+    font-weight: 300;
 }
 
 #wrapper2 #main #box #box3 h1 {
@@ -340,6 +343,7 @@ color: #083f77;
   font-size: 7em;
   margin: 1%;
   text-align: left;
+    font-weight: 300;
 }
 
 .footer-card {
