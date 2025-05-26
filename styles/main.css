@@ -1,0 +1,459 @@
+@font-face {
+    font-family: "Laboah";
+    src: url("/fonts/laboah.ttf");
+}
+
+
+* {
+    font-family: "Laboah";
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+#wrapper1 {
+    flex-basis: 50%;
+}
+
+#wrapper1 #header {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#wrapper1 #header #logo {
+    flex-basis: 100%;
+}
+
+#wrapper1 #header #nav a #white {
+    color: black ;
+}
+
+#wrapper1 #header #logo h1 a {
+    color: #21295C;
+   text-decoration: none;
+}
+
+
+#wrapper1 #header #logo #calabaza {
+    width: 100%;
+    z-index: -1;
+    position: sticky;
+    border-radius: 12px;
+    max-width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+@keyframes positionImage {
+    0% { top: 10px;}
+    50% {top: 20px;}
+    100% { top: 3px;}
+}
+
+#wrapper1 #header #logo #calabaza #img {
+    width: 39%;
+    position: absolute;
+    animation-name: positionImage;
+    animation-duration: 2s; 
+    animation-iteration-count: infinite; 
+    animation-timing-function: ease-in-out; 
+}
+#wrapper1 #header #logo #calabaza p {
+    text-shadow: #adc3f6 8px 0px 0px;
+    font-size: 8.3em;
+    margin:
+  9%;
+    -webkit-text-fill-color: transparent;
+    background:
+  linear-gradient(90deg, #21383c, #15c6ee, #fffdfd);
+      background-clip: border-box;
+    background-clip: border-box;
+    -webkit-background-clip:
+  text;
+}
+#wrapper1 #header h1 {
+    margin: 0;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    backdrop-filter: blur(9px);
+  
+}
+
+#wrapper #header h1> a {
+    font-size: 1em;
+}
+
+#wrapper #header h1> p {
+    font-size: 0.4em;
+    color: #21295C;
+    margin:
+  0;
+}
+
+#wrapper1 #header #nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    text-decoration: none;
+    text-transform: revert;
+    position: fixed;
+    bottom: 0px;
+    left: 1px;
+    padding: 1%;
+    background-color: white;
+    z-index: 100;
+}
+
+.eye {
+    cursor: pointer;
+    background:
+  url("/cursor/vision.png") no-repeat;
+      background-position-x: 0%;
+      background-position-y: 0%;
+      background-size: auto;
+    height: 100px;
+    background-size: contain;
+    background-position:
+  center;
+}
+
+.eye:hover {
+    cursor: pointer;
+    background:
+  url("/cursor/sleep.png") no-repeat;
+      background-position-x: 0%;
+      background-position-y: 0%;
+      background-size: auto;
+    height: 100px;
+    background-size: contain;
+    background-position:
+  center;
+}
+
+
+#wrapper1 #header #nav a {
+    color: #1C7293;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.5s;
+    font-size: 1.6em;
+}
+
+#wrapper1 #header #nav a:first-child {
+    color: #1C7293;
+}
+
+#wrapper1 #header #nav a::after {
+    content: ">";
+    font-size: 1em;
+    position: absolute;
+    opacity: 1;
+    width: 28%;
+    font-size: 1.3em;
+    margin-left: 5%;
+}
+
+#wrapper1 #header #nav a:hover {
+color: #083f77;
+
+}
+#image {
+    width: 39%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+
+#wrapper2 {
+    flex-basis: 50%;
+}
+
+#wrapper2 #main #box .bcn {
+    text-align: end;
+    font-size: 0.8em;
+    margin:
+  0;
+}
+
+
+
+#wrapper2 #main #box h1 {
+    margin:
+    0;
+      text-align: end;
+      font-size: 7em;
+      color: #083f77;
+  
+}
+
+
+#wrapper2 #main #box2 {
+    margin: 6% 7%;
+    border-bottom: 4px solid #e4ecf5;
+}
+
+.study {
+  color: #bd3535;
+}
+iframe {
+  border: none;
+}
+
+#wrapper2 #main #article {
+    text-align: justify;
+    margin:
+  0% 9%;
+    line-height: 2;
+}
+
+#wrapper2 #main #box2 #span::after {
+    content: "<--Anastasia//Fisunenko-->";
+    color:  #083f77;
+    font-size: 1.5em;
+  }
+
+  #wrapper2 #main  #description-me {
+    display: flex;
+    width: 100%;
+  }
+
+  #wrapper2 #main  #description-me #img-placeholder {
+    width: 100%;
+    align-content: center;
+    position: relative;
+    z-index: -1;
+  }
+
+  @keyframes rotationImage {
+    0% { transform: rotateY(0deg);}
+    25% { transform: rotateY(180deg);}
+    50% {transform: rotateY(180deg);}
+    100% {transform: rotateY(0deg);}
+}
+
+  #wrapper2 #main #description-me #img-placeholder img {
+    max-width: 100%;
+    position: absolute;
+    top: 88px;
+    animation-name: rotationImage;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+  }
+
+  .front {
+color: #083f77;
+    font-weight: 600;
+  font-size: 1.5em;
+
+  }
+
+  #box3 {
+    border-radius: 12px;
+}
+
+#box3 #h3 {
+  font-size: 7em;
+  color: #083f77;
+}
+
+#wrapper2 #main #box #box3 h1 {
+    color: white;
+    font-size: 2em;
+}
+
+#cards {
+    position: relative;
+    display: flex;
+  justify-content: center;
+height: 99vh;
+}
+
+.card {
+    position: absolute;
+background-color: #083f77;
+  transform: skew(56deg);
+  padding: 2%;
+  transition: all 1s;
+  border-radius: 19px;
+  width: 70%;
+  box-shadow: -42px 18px 10px -4px #918e8e73;
+}
+
+.text-card {
+    display: none;
+    transition: all 1s;
+}
+
+.text-card p {
+    color: black;
+  font-size: 0.9em;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.card2 {
+    top: 150px;
+}
+
+.iconos-card {
+    display: flex;
+}
+
+.card3 {
+    top: 300px;
+}
+.card4 {
+  top: 450px;
+}
+
+
+.img-icon img {
+    width: 36px;
+}
+
+.card:hover {
+    transform: skew(0deg);
+    background-color: white;
+    z-index: 100;
+}
+
+
+.card:hover .text-card {
+    display: block;
+}
+
+#footer  {
+margin: 4% 0%;
+}
+
+#footer .footer-card > p {
+color: #083f77;
+  font-size: 7em;
+  margin: 1%;
+  text-align: left;
+}
+
+.footer-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin: 2%;
+}
+
+.footer img {
+width: 30px;
+  margin: 1%;
+  align-items: center;
+}
+
+
+
+
+
+@media  (min-width: 300px) and (max-width: 900px) {
+    #wrapper {
+       flex-direction: column;
+    }
+
+    #wrapper1 #header #logo #calabaza {
+        width: 100%;
+    }
+
+    #wrapper1 {
+        flex-basis: 50%;
+      }
+
+      #wrapper1 #header h1 {
+        font-size: 2em;
+        flex-direction: column;
+        margin: 2%;
+      }
+
+      #wrapper1 #header #logo #calabaza p {
+        margin: 55%;
+        font-size: 3.1em;
+      }
+      #wrapper #header h1 > p {
+          font-size: 0.3em;
+      }
+
+      #wrapper1 #header #logo #calabaza #img  {
+        width: 100%;
+      }
+
+      #wrapper2 #main #box2 {
+        margin: 29% 7%;
+      }
+
+      #wrapper2 #main #box h1 {
+        font-size: 3em;
+      }
+      
+      #wrapper2 #main #box2 #span::after {
+        font-size: 1em;
+      }
+
+      #wrapper2 #main #article {
+        font-size: 0.7em;
+        margin: 12% 9%;
+        flex-basis: 75%;
+      }
+      #wrapper2 #main #description-me #img-placeholder {
+        flex-basis: 25%;
+      }
+      #box3 #h3 {
+        font-size: 3em;
+      }
+      .card {
+        width: 85%;
+      }
+      .text-card p {
+        font-size: 0.6em;
+      }
+      nav a {
+        font-size: 0.9em !important;
+      }
+
+      #wrapper1 #header #nav a::after {
+        display: none;
+      }
+
+      #wrapper1 #header #nav {
+        padding: 4%;
+
+      }
+
+      #footer .footer-card > p {
+        font-size: 3em;
+      }
+
+      .footer {
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+      }
+
+      .footer-card {
+        display: flex;
+        flex-direction: column;
+        margin: 8%;
+      }
+}
+
+
