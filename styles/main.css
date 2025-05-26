@@ -363,6 +363,14 @@ width: 30px;
   align-items: center;
 }
 
+.img-cert {
+    width: 90%
+}
+
+.img-cert img {
+    max-width: 100%
+}
+
 
 
 
