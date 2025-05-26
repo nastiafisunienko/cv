@@ -127,7 +127,7 @@
 .eye:hover {
     cursor: pointer;
     background:
-  url("/cursor/sleep.png") no-repeat;
+  url("../cursor/sleep.png") no-repeat;
       background-position-x: 0%;
       background-position-y: 0%;
       background-size: auto;
