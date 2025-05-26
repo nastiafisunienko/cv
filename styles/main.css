@@ -114,7 +114,7 @@
 .eye {
     cursor: pointer;
     background:
-  url("/cursor/vision.png") no-repeat;
+  url("../cursor/vision.png") no-repeat;
       background-position-x: 0%;
       background-position-y: 0%;
       background-size: auto;
