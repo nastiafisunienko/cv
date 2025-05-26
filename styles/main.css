@@ -363,11 +363,11 @@ width: 30px;
   align-items: center;
 }
 
-.img-cert {
+#img-cert {
     width: 90%
 }
 
-.img-cert img {
+#img-cert img {
     max-width: 100%
 }
 
