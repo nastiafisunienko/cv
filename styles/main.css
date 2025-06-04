@@ -53,6 +53,12 @@
     50% {top: 20px;}
     100% { top: 3px;}
 }
+@keyframes positionImageMin {
+    0% { top: 90px;}
+    50% {top: 100px;}
+    100% { top: 90px;}
+}
+
 
 #wrapper1 #header #logo #calabaza #img {
     width: 39%;
@@ -395,8 +401,8 @@ width: 30px;
       }
 
       #wrapper1 #header #logo #calabaza p {
-        margin: 55%;
-        font-size: 3.1em;
+        margin: 38%;
+        font-size: 4.7em;
       }
       #wrapper #header h1 > p {
           font-size: 0.3em;
@@ -462,6 +468,23 @@ width: 30px;
         display: flex;
         flex-direction: column;
         margin: 8%;
+        padding: 20%;
+      }
+
+      #cards {
+        height: 80vh;
+      }
+
+      #wrapper1 #header #logo #calabaza #img {
+        animation-name: positionImageMin;
+      }
+      .active-cards {
+        transform: skew(0deg);
+        background-color: white;
+        z-index: 100;
+      }
+      .active-cards .text-card {
+        display: block;
       }
 }
 

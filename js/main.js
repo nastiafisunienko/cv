@@ -54,4 +54,12 @@ $(document).ready(function(){
     handleScroll(20, elements);
 
     //handleScroll(500, el)
+
+    let cards = document.querySelectorAll(".card")
+    cards.forEach(element => {
+        element.addEventListener("click", ()=> {
+            element.classList.toggle("active-cards")
+        })
+    });
+
 });
