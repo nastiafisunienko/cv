@@ -55,24 +55,12 @@ $(document).ready(function(){
 
     //handleScroll(500, el)
 
-    let cards = document.querySelectorAll(".card");
-
-cards.forEach(card => {
-    // Handle card click: activate
-    card.addEventListener("click", () => {
-        card.classList.toggle("active-cards");
+    let cards = document.querySelectorAll(".card")
+    cards.forEach(element => {
+        element.addEventListener("click", ()=> {
+            element.classList.toggle("active-cards")
+        })
     });
-
-    // Handle close button click: deactivate
-    let closeButton = card.querySelector(".close");
-    if (closeButton) {
-        closeButton.addEventListener("click", (event) => {
-            event.stopPropagation(); // Prevent re-triggering the card click
-            card.classList.remove("active-cards");
-        });
-    }
-});
-
-
+    
 
 });
