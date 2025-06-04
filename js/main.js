@@ -57,26 +57,22 @@ $(document).ready(function(){
 
     let cards = document.querySelectorAll(".card");
 
-    cards.forEach(card => {
-        card.addEventListener("click", () => {
-            card.classList.toggle("active-cards");
-
-        // Select the close button *inside this card* after it's activated
-            let closeButton = card.querySelector(".close");
-
-            if (closeButton) {
-            // Check if listener is already added (optional, to avoid duplicates)
-             if (!closeButton.classList.contains("listener-added")) {
-                    closeButton.classList.add("listener-added");
-
-                    closeButton.addEventListener("click", (event) => {
-                        event.stopPropagation(); // Prevent click from bubbling up to the card
-                        card.classList.remove("active-cards");
-                        card.classList.add("closed");
-                });
-            }
-        }
+cards.forEach(card => {
+    // Handle card click: activate
+    card.addEventListener("click", () => {
+        card.classList.toggle("active-cards");
     });
+
+    // Handle close button click: deactivate
+    let closeButton = card.querySelector(".close");
+    if (closeButton) {
+        closeButton.addEventListener("click", (event) => {
+            event.stopPropagation(); // Prevent re-triggering the card click
+            card.classList.remove("active-cards");
+        });
+    }
 });
+
+
 
 });
