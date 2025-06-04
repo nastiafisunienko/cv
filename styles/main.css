@@ -376,6 +376,9 @@ width: 30px;
 #img-cert img {
     max-width: 100%
 }
+.close {
+  display: none;
+}
 
 
 
@@ -485,6 +488,28 @@ width: 30px;
       }
       .active-cards .text-card {
         display: block;
+      }
+      .active-cards .close {
+        position: relative;
+        display: block;
+        cursor: pointer;
+        padding: 4%;
+      }
+      .active-cards .up {
+        position: absolute;
+        border-top: 2px solid #083f77;
+        width: 15px;
+        right: 5px;
+        top: 13px;
+        transform: rotate(45deg);
+      }
+      .active-cards .down {
+        position: absolute;
+        border-top: 2px solid #083f77;
+        width: 15px;
+        right: 5px;
+        top: 13px;
+        transform: rotate(135deg);
       }
 }
 
