@@ -302,6 +302,36 @@ background-color: #083f77;
     transition: all 1s;
 }
 
+.pro {
+  width: 100%;
+}
+
+.pro a {
+  font-size: 10em;
+  color: black;
+  text-decoration: none;
+}
+.proyectos {
+  display: flex;
+  flex-direction: column;
+  padding: 2% 2% 11%;
+}
+.pro a:hover {
+  text-decoration: line-through;
+  transition: all 1s;
+  font-size: 11em;
+  color: #083f77;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
+}
+.box span {
+  width: 50%;
+}
+
+
 .text-card p {
     color: black;
   font-size: 0.9em;
@@ -488,6 +518,14 @@ width: 30px;
       }
       .active-cards .text-card {
         display: block;
+      }
+
+      .pro a {
+        font-size: 5em;
+      }
+
+      .box span {
+        width: 80%;
       }
 
 
